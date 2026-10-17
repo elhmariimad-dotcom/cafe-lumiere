@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Café Lumière, votre espace café chaleureux. Découvrez notre café, nos pâtisseries et notre menu.">
+
+  <meta name="theme-color" content="#f8f4ec">
+
+  <title>Café Lumière | Un instant de douceur</title>
+
+  <!-- Police Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Notre feuille de style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icônes Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Notre JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container" aria-label="Navigation principale">
+
+      <a class="logo" href="#accueil">
+        <span class="logo-icon"><i data-lucide="coffee"></i></span>
+        <span>Café <strong>Lumière</strong></span>
+      </a>
+
+      <button class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">Notre histoire</a></li>
+        <li><a href="#menu">Notre menu</a></li>
+        <li><a href="#horaires">Horaires</a></li>
+        <li>
+          <a href="#contact" class="nav-cta">Nous contacter</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section principale -->
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <span class="eyebrow">
+            <span class="eyebrow-line"></span>
+            VOTRE PAUSE PRÉFÉRÉE
+          </span>
+
+          <h1>
+            Un bon café.<br>
+            <span>Un instant</span><br>
+            de douceur.
+          </h1>
+
+          <p class="hero-description">
+            Des cafés soigneusement préparés, des pâtisseries
+            gourmandes et une ambiance chaleureuse pour savourer
+            chaque instant.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="button button-primary">
+              Découvrir le menu
+              <i data-lucide="arrow-right"></i>
+            </a>
+
+            <a href="#apropos" class="button button-secondary">
+              Notre histoire
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <i data-lucide="heart"></i>
+            Préparé avec passion, servi avec le sourire.
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=85"
+            alt="Intérieur chaleureux d'un café"
+          >
+
+          <div class="image-card">
+            <span class="image-card-icon">
+              <i data-lucide="coffee"></i>
+            </span>
+            <div>
+              <strong>Votre moment à vous</strong>
+              <span>Un café, mille sourires.</span>
+            </div>
+          </div>
+
+          <span class="decor decor-one"></span>
+          <span class="decor decor-two"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Points forts -->
+    <section class="features">
+      <div class="container feature-grid">
+
+        <article class="feature">
+          <i data-lucide="coffee"></i>
+          <div>
+            <h3>Café de qualité</h3>
+            <p>Une tasse préparée avec soin.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <i data-lucide="croissant"></i>
+          <div>
+            <h3>Douceurs gourmandes</h3>
+            <p>Des plaisirs pour chaque envie.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <i data-lucide="armchair"></i>
+          <div>
+            <h3>Ambiance cosy</h3>
+            <p>Un lieu pour ralentir et profiter.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="about section-padding" id="apropos">
+      <div class="container about-grid">
+
+        <div class="about-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85"
+            alt="Préparation artisanale du café"
+            loading="lazy"
+          >
+          <div class="about-label">
+            <span>Une passion</span>
+            <strong>à chaque tasse.</strong>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="eyebrow">BIENVENUE CHEZ NOUS</span>
+
+          <h2>Le plaisir des choses <em>simples.</em></h2>
+
+          <p>
+            Chez Café Lumière, nous croyons que les meilleurs
+            moments commencent souvent par une bonne tasse de café.
+          </p>
+
+          <p>
+            Que vous veniez pour un espresso matinal, une pause
+            gourmande ou un moment entre amis, notre porte est
+            ouverte pour vous offrir une expérience agréable.
+          </p>
+
+          <a href="#contact" class="text-link">
+            Venez nous découvrir
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">UNE PAUSE GOURMANDE</span>
+          <h2>Notre menu <em>favori.</em></h2>
+          <p>Des classiques incontournables et quelques douceurs.</p>
+        </div>
+
+        <!-- Filtres générés par JavaScript -->
+        <div class="menu-filters" id="menu-filters"
+          aria-label="Filtrer les produits">
+        </div>
+
+        <!-- Produits générés par JavaScript -->
+        <div class="product-grid" id="product-grid"></div>
+
+        <p class="menu-note">
+          <i data-lucide="info"></i>
+          Prix et produits présentés à titre de démonstration.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Bannière -->
+    <section class="quote-section">
+      <div class="container quote-content">
+        <i data-lucide="coffee"></i>
+        <h2>La vie est plus belle autour d'un café.</h2>
+        <p>Prenez le temps. Savourez l'instant.</p>
+        <a href="#contact" class="button button-light">
+          Nous rendre visite
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Horaires et contact -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">ON VOUS ATTEND</span>
+          <h2>Faisons connaissance.</h2>
+          <p>Envie d'un café ? Voici comment nous retrouver.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <article class="contact-card" id="horaires">
+            <span class="contact-icon">
+              <i data-lucide="clock"></i>
+            </span>
+            <h3>Nos horaires</h3>
+
+            <div class="hours-row">
+              <span>Lundi – Vendredi</span>
+              <strong>08h00 – 20h00</strong>
+            </div>
+
+            <div class="hours-row">
+              <span>Samedi</span>
+              <strong>09h00 – 21h00</strong>
+            </div>
+
+            <div class="hours-row">
+              <span>Dimanche</span>
+              <strong>09h00 – 18h00</strong>
+            </div>
+
+            <p class="small-note">
+              Horaires fictifs : à personnaliser avant publication.
+            </p>
+          </article>
+
+          <article class="contact-card">
+            <span class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </span>
+            <h3>Notre adresse</h3>
+            <p>
+              Votre futur café préféré vous attend.
+              Ajoutez ici l'adresse réelle du commerce.
+            </p>
+
+            <div class="contact-detail">
+              <i data-lucide="map-pinned"></i>
+              <span>Ville et adresse à personnaliser</span>
+            </div>
+
+            <a href="https://www.google.com/maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-link">
+              Ouvrir Google Maps
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <article class="contact-card">
+            <span class="contact-icon">
+              <i data-lucide="message-circle"></i>
+            </span>
+            <h3>Contactez-nous</h3>
+            <p>
+              Une question, une envie ou une information ?
+              Écrivez-nous directement.
+            </p>
+
+            <a
+              href="https://wa.me/212697694802?text=Bonjour%20Caf%C3%A9%20Lumi%C3%A8re"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary contact-button">
+              <i data-lucide="message-circle"></i>
+              Écrire sur WhatsApp
+            </a>
+
+            <p class="small-note">
+              Remplacez le numéro de démonstration par le numéro
+              WhatsApp du commerce.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <a class="logo footer-logo" href="#accueil">
+        <span class="logo-icon"><i data-lucide="coffee"></i></span>
+        <span>Café <strong>Lumière</strong></span>
+      </a>
+
+      <p>Un instant de douceur, chaque jour.</p>
+
+      <p class="copyright">
+        © <span id="year"></span> Café Lumière.
+        Projet de démonstration.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/212697694802?text=Bonjour%20Caf%C3%A9%20Lumi%C3%A8re"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contacter le café sur WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+</body>
+</html>
